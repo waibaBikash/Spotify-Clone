@@ -11,7 +11,7 @@ const App = () => {
         <Sidebar />
         <Display />
       </div>
-         <Navbar />
+         {/* <Navbar /> */}
         <Player />
     </div>
   )
