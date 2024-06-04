@@ -10,8 +10,8 @@ const App = () => {
       <div className='h-[90%] flex'>
         <Sidebar />
         <Display />
-        <Navbar />
       </div>
+         <Navbar />
         <Player />
     </div>
   )
