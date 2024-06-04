@@ -10,7 +10,7 @@ const PlayerContextProvider = (props)=>{
 
   const [track,setTrack] = useState(songsData[0]);
   const [playStatus,setPlayStatus] = useState(false);
-  cost [time,setTime] = useState({
+  const [time,setTime] = useState({
     currenTime:{
       second:0,
       minute:0
