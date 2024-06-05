@@ -15,7 +15,7 @@ const PlayerContextProvider = (props)=>{
       second:0,
       minute:0
     },
-    todalTime:{
+    totalTime:{
       second:0,
       minute:0
     }
@@ -35,11 +35,11 @@ const PlayerContextProvider = (props)=>{
     setTime({
       currenTime:{
         second: Math.floor(audioRef.current.currenTime % 60),
-        minute: Math.floor(audioRef.current.currenTime / 60)
+        minute: Math.floor(audioRef.current.currenTime / 60),
       },
-      todalTime:{
+      totalTime:{
         second: Math.floor(audioRef.current.duration % 60),
-        minute: Math.floor(audioRef.current.duration / 60)
+        minute: Math.floor(audioRef.current.duration / 60),
       }
     })
     }
@@ -50,12 +50,9 @@ const PlayerContextProvider = (props)=>{
    audioRef,
    seekBar,
    seekBg,
-   track,
-   setTrack,
-   playStatus,
-   setPlayStatus,
-   time,
-   setTime,
+   track,setTrack,
+   playStatus,setPlayStatus,
+   time,setTime,
    play,pause
   }
   return(
